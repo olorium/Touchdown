@@ -11,6 +11,7 @@ import SwiftUI
 @dynamicMemberLookup
 struct Constants {
 	// MARK: - Data
+	let players: [Player] = Bundle.main.decode("player.json")
 	
 	// MARK: - Color
 	let colorBackground = Color("ColorBackground")

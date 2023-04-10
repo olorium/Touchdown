@@ -20,9 +20,17 @@ struct ContentView: View {
 					.padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
 					.background(Color.white)
 					.shadow(color: .black.opacity(0.05), radius: 5, x: 0, y: 5)
-				Spacer()
-				FooterView()
-					.padding(.horizontal)
+				
+				ScrollView(.vertical, showsIndicators: false) {
+					VStack(spacing: 0) {
+						FeaturedTabView()
+							.frame(height: UIScreen.main.bounds.width / 1.475 )
+							.padding(.vertical, 10)
+						
+						FooterView()
+							.padding(.horizontal)
+					}
+				}
 			}
 			.background(Constants.colorBackground.ignoresSafeArea(.all, edges: .all))
 		}
