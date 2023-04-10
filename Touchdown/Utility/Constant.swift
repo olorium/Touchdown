@@ -8,15 +8,21 @@
 import SwiftUI
 
 /// Constants for the project.
-@dynamicMemberLookup
-struct Constants {
+enum Constants {
 	// MARK: - Data
-	let players: [Player] = Bundle.main.decode("player.json")
+	static let players: [Player] = Bundle.main.decode("player.json")
+	static let categories: [Category] = Bundle.main.decode("category.json")
 	
 	// MARK: - Color
-	let colorBackground = Color("ColorBackground")
-	let colorGray = Color(UIColor.systemGray4)
+	static let colorBackground = Color("ColorBackground")
+	static let colorGray = Color(UIColor.systemGray4)
+	
 	// MARK: - Layout
+	static let columnSpacing: CGFloat = 10
+	static let rowSpacing: CGFloat = 10
+	static var gridLayout: [GridItem] {
+		Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 2)
+	}
 	
 	// MARK: - UX
 	
@@ -29,11 +35,4 @@ struct Constants {
 	// MARK: - Font
 	
 	// MARK: - Misc
-	
-	/// Prevent outside construction by making the init private.
-	private init() {}
-	
-	static subscript<T>(dynamicMember keyPath: KeyPath<Constants, T>) -> T {
-		Constants()[keyPath: keyPath]
-	}
 }

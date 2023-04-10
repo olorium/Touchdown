@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct FooterView: View {
-	// MARK: - Properties
-	
 	// MARK: - Body
     var body: some View {
 		VStack(alignment: .center, spacing: 10) {

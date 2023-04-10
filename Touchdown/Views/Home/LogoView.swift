@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct LogoView: View {
-	// MARK: - Properties
-	
 	// MARK: - Body
     var body: some View {
 		HStack(spacing: 4) {
