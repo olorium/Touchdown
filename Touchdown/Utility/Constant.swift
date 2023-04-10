@@ -12,8 +12,9 @@ enum Constants {
 	// MARK: - Data
 	static let players: [Player] = Bundle.main.decode("player.json")
 	static let categories: [Category] = Bundle.main.decode("category.json")
-	static let product: [Product] = Bundle.main.decode("product.json")
+	static let products: [Product] = Bundle.main.decode("product.json")
 	static let brands: [Brand] = Bundle.main.decode("brand.json")
+	static let sampleProduct = products[0]
 	
 	// MARK: - Color
 	static let colorBackground = Color("ColorBackground")
@@ -27,14 +28,5 @@ enum Constants {
 	}
 	
 	// MARK: - UX
-	
-	// MARK: - API
-	
-	// MARK: - Image
-	
-	// MARK: - Font
-	
-	// MARK: - Font
-	
-	// MARK: - Misc
+	static let feedback = UIImpactFeedbackGenerator(style: .medium)
 }

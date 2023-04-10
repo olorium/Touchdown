@@ -37,7 +37,7 @@ struct ProductItemView: View {
 
 struct ProductItemView_Previews: PreviewProvider {
     static var previews: some View {
-		ProductItemView(product: Constants.product[1])
+		ProductItemView(product: Constants.sampleProduct)
 			.previewLayout(.fixed(width: 200, height: 300))
 			.padding()
 			.background(Constants.colorBackground)
