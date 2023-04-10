@@ -13,4 +13,4 @@
 <img src="./Readme/home3.gif" alt="" width="375"/> 
 
 ## Details screen
-<img src="./Readme/details3.gif" alt="" width="375"/> 
+<img src="./Readme/details1.gif" alt="" width="375"/> 
