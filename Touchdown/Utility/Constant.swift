@@ -13,6 +13,7 @@ enum Constants {
 	static let players: [Player] = Bundle.main.decode("player.json")
 	static let categories: [Category] = Bundle.main.decode("category.json")
 	static let product: [Product] = Bundle.main.decode("product.json")
+	static let brands: [Brand] = Bundle.main.decode("brand.json")
 	
 	// MARK: - Color
 	static let colorBackground = Color("ColorBackground")
